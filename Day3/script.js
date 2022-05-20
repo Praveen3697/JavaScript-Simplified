@@ -146,4 +146,51 @@ console.log(c[2][0])
         return number <= 2
     })
     console.log(newArr2)
+
+    // other methods that are useful are some and every..it returns boolean value i.e. true or false..
+}
+{
+    // reduce method
+    const items=[
+        {price: 10},
+        {price: 15},
+        {price: 20},
+        {price: 1},
+        {price: 6}
+    ]
+
+    const total=items.reduce((sum,item)=>{
+        return sum+item.price
+    },0 ) /*initializing the value of sum*/
+
+    console.log(total)
+
+
+    const a="Praveen"
+    const b="Nair"
+
+    // console.log(a+" "+b)
+    console.log(`${a} ${b}`)
+
+
+}
+
+{
+    class User{
+        constructor(name,age){
+            this.name=name,
+            this.age=age,
+            this.isHuman=true
+        }
+    }
+    // function User(name,age){
+    //     this.name = name,
+    //     this.age = age,
+    //     this.isHuman = true
+    // }
+
+    const user = new User("Praveen",25)
+    const user1 = new User("PrasannaKumar",62)
+    console.log(user)
+    console.log(user1)
 }

@@ -47,3 +47,4 @@ fname('Sreelatha')
 let sayHi = (name) => 'Hi '+ name
 
 console.log(sayHi('Praveen'))
+
